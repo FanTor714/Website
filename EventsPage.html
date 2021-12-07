@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Events</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <link rel="stylesheet" href="pogchamp.css">
+</head>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="container">
+    <div class="w3-top">
+      <div class="center w3-blue-grey w3-card-4">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class=".center w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue-grey">
+          <br>
+          <br>HOME</a>
+        <a href="EventsPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-blue-grey">
+          <br>
+          <br>PLAYERS</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-blue-grey">
+          <br>
+          <br>EVENTS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-blue-grey">
+          <br>
+          <br>ACHIEVEMENTS</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button w3-hover-black w3-hover-text-blue-grey" title="More">
+            <br>
+            <br>MORE <i class="fa fa-caret-down"></i></button>     
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-blue-grey">Merchandise</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-blue-grey">Sponsors</a>
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right w3-hover-text-blue-grey">
+          <br>
+          <br><i class="fa fa-search"></i></a>
+      </div>
+    </div>
+
+<!-- Events -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:605px">
+      <h2 class="w3-wide w3-center">Player Events</h2>
+      <p class="w3-opacity w3-center"><i>Make sure to make it to these tournaments to support our players!</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="pog.jpg" alt="GENESIS" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Genesis 8</b></p>
+            <p class="w3-opacity">January 2022</p>
+            <p>This is a supermajor Super Smash Bros Ultimate tournament that has been created from the ground up since 2009. Now it draws thousands of competitors and fans including our amazing and handsome players.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="location.href='https://smash.gg/tournament/genesis-8/details';" value="Genesis8">Sign Up!</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Sign Up!</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
