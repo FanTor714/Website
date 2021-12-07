@@ -92,7 +92,7 @@ body {
 
 .text-6 {
     animation: blink 0.8s linear 0.4s, blink 0.8s linear 2.5s, slide-out 1s linear 3.2s;
-    opacity: 0; margin-left: 22%; color: rgb(240,230,140);
+    opacity: 0; text-align: center; color: rgb(240,230,140);
 }
 
 .text-7 {
