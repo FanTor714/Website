@@ -12,8 +12,18 @@
 </head>
 <style>
 @import url('http://fonts.cdnfonts.com/css/monument-extended');
-body {font-family: "Lato", sans-serif}
+h3 {font-family: Courier, monospace; font-weight: 1000;}
+body {
+  font-family: "Monument Extended";
+  background-color: rgb(235, 235, 235);
+}
+::-webkit-scrollbar {
+    display: none;
+}
 .mySlides {display: none}
+.lecard {
+  opacity: 0.9;
+}
 </style>
 <body>
 
@@ -24,7 +34,7 @@ body {font-family: "Lato", sans-serif}
             <div class="text-3 text">The One The Only</div>
             <div class="text-4 text">The One The Only</div>
             <div class="text-5 text">The One The Only</div>
-            <div class="text-6 text">Players</div>
+            <div class="text-6 text">THE PLAYERS</div>
             <div class="text-7 text">The One The Only</div>
             <div class="text-8 text">The One The Only</div>
             <div class="text-9 text">The One The Only</div>
@@ -33,39 +43,40 @@ body {font-family: "Lato", sans-serif}
         </div>
     </div>    
 
-
 <!-- Navbar -->
 <div class="container">
-    <div class="w3-top">
-      <div class="center w3-blue-grey w3-card-4">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="Homepage.html" class=".center w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue-grey">
+  <div class="w3-top">
+    <div class="lecard center w3-center container3 w3-khaki">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+      <br>
+      <br>
+      <i class="fa fa-bars"></i></a>
+      <a href="Homepage.html" class=".center w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-yellow">
+        <br>
+        <br>HOME</a>
+      <a href="PlayersPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-yellow">
+        <br>
+        <br>PLAYERS</a>
+      <a href="EventsPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-yellow">
+        <br>
+        <br>EVENTS</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-yellow">
+        <br>
+        <br>ACHIEVEMENTS</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button w3-hover-black w3-hover-text-yellow" title="More">
           <br>
-          <br>HOME</a>
-        <a href="PlayersPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-blue-grey">
-          <br>
-          <br>PLAYERS</a>
-        <a href="EventsPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-blue-grey">
-          <br>
-          <br>EVENTS</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-blue-grey">
-          <br>
-          <br>ACHIEVEMENTS</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-padding-large w3-button w3-hover-black w3-hover-text-blue-grey" title="More">
-            <br>
-            <br>MORE <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-blue-grey">Merchandise</a>
-            <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-blue-grey">Sponsors</a>
-          </div>
+          <br>MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Merchandise</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Sponsors</a>
         </div>
-        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right w3-hover-text-blue-grey">
-          <br>
-          <br><i class="fa fa-search"></i></a>
       </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-black w3-hide-small w3-right w3-hover-text-yellow">
+        <br>
+        <br><i class="fa fa-search"></i></a>
     </div>
-</div>
+  </div>
 
   <!-- Players Page -->
 <div class="w3-content" style="max-width:2000px;margin-top:0px">
