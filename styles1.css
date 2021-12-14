@@ -15,7 +15,7 @@
     color: #777;
 }
 
-html, body {
+html, header {
     margin: 0;
     padding: 0;
     min-height: 100%;
