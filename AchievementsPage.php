@@ -103,7 +103,7 @@ class TableRows extends RecursiveIteratorIterator {
 
 $servername = "localhost";
 $username = "root";
-$password = "minecraft";
+$password = "1234";
 $dbname = "127.0.0.1";
 
 try {
