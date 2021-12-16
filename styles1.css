@@ -9,13 +9,13 @@
     font-style: normal;
 }
 
-* {
-    box-sizing: border-box;
+.container4 {
+    box-sizing: auto;
     font-family: Raleway;
     color: #777;
 }
 
-html, header {
+html, header, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -52,7 +52,7 @@ html, header {
 }
 
 .main-header {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(255, 201, 53, 0.6);
     background-image: url("Images/Header Background.jpg");
     background-blend-mode: multiply;
     background-size: cover;
@@ -63,9 +63,14 @@ html, header {
     text-align: center;
     margin: 0;
     font-size: 4em;
-    font-family: "Booter - Zero Zero";
+    font-family: "Monument Extended";
     font-weight: normal;
     color: white;
+}
+
+.supersmalltext {
+    font-size: 1em;
+    color:  rgba(255, 29, 29, 0.6);
 }
 
 .band-name-large {
@@ -76,13 +81,13 @@ html, header {
     margin: 1em;
 }
 
-.container {
+.container_3 {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
 .section-header {
-    font-family: "Metal Mania";
+    font-family: "Courier, monospace";
     font-weight: normal;
     color: #333;
     text-align: center;
