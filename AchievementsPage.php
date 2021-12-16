@@ -27,7 +27,7 @@ body {
 </style>
 <body>
 
-      <div class="container2">
+    <div class="container2">
         <div class="text-wrapper">
             <div class="text-1 text">The One The Only</div>
             <div class="text-2 text">The One The Only</div>
@@ -77,3 +77,52 @@ body {
         <br><i class="fa fa-search"></i></a>
     </div>
   </div>
+<body>
+  
+  <?php
+echo "<table style='border: solid 1px black;'>";
+ echo "<tr><th>Achievements</th><th>Placement</th><th>Prize_Pool</th></tr>";
+
+class TableRows extends RecursiveIteratorIterator {
+    function __construct($it) {
+        parent::__construct($it, self::LEAVES_ONLY);
+    }
+
+    function current() {
+        return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
+    }
+
+    function beginChildren() {
+        echo "<tr>";
+    }
+
+    function endChildren() {
+        echo "</tr>" . "\n";
+    }
+}
+
+$servername = "localhost";
+$username = "root";
+$password = "minecraft";
+$dbname = "127.0.0.1";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $conn->prepare("SELECT Achievements, Placement, Prize_Pool FROM hoohoohoohoo");
+    $stmt->execute();
+
+    // set the resulting array to associative
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+        echo $v;
+    }
+}
+catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+$conn = null;
+echo "</table>";
+?> 
+</body>
