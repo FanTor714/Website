@@ -1,0 +1,17 @@
+.container{
+  height: 7000;
+  width: 7000;
+}
+
+.vertcenter{
+  margin-top: 25%;
+}
+
+.center {
+  margin: 0;
+  position: relative;
+  top: auto;
+  left: 50%;
+  -ms-transform: translate(0%, 0%);
+  transform: translate(-50%, -50%);
+}
