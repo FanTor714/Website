@@ -60,7 +60,7 @@ body {
       <a href="EventsPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-yellow">
         <br>
         <br>EVENTS</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-yellow">
+      <a href="AchievementsPage.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-black w3-hover-text-yellow">
         <br>
         <br>ACHIEVEMENTS</a>
       <div class="w3-dropdown-hover w3-hide-small">
@@ -68,15 +68,40 @@ body {
           <br>
           <br>MORE <i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Merchandise</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Sponsors</a>
+          <a href="store.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Merchandise</a>
+          <a href="Sponsors.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Sponsors</a>
         </div>
       </div>
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-black w3-hide-small w3-right w3-hover-text-yellow">
-        <br>
-        <br><i class="fa fa-search"></i></a>
     </div>
   </div>
+
+    <table align="center" border="1px" style="width:300px; line: height 30px;">
+      <tr>
+
+      </tr> 
+      <t>
+          <th> Achievements </th>
+          <th> Placement </th>
+          <th> Prize Pool </th>
+      </t>
+        <tr>
+        <td>
+          <?php 
+          echo $rows['Achievements'];
+           ?> 
+        </td>
+        <td>
+          <?php 
+            echo $rows['Placement'];
+          ?> 
+        </td>
+        <td>
+          <?php 
+            echo $rows['Prize_Pool'];
+          ?> 
+        </td>
+    </tr>     
+      
 <body>
   
   <?php
@@ -90,7 +115,7 @@ class TableRows extends RecursiveIteratorIterator {
 
     function current() {
         return "<td style='width: 150px; border: 1px solid black;'>" . parent::current(). "</td>";
-    }
+    } 
 
     function beginChildren() {
         echo "<tr>";
@@ -109,16 +134,8 @@ $dbname = "roman";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT Achievements, Placement, Prize_Pool FROM Trophies");
-    $stmt->execute();
 
-    // set the resulting array to associative
-    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-
-    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-        echo $v;
     }
-}
 catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
