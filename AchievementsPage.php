@@ -52,7 +52,7 @@ $connection = mysqli_connect("localhost","root", "1234", "roman");
     </div>    
 
 <!-- Navbar -->
-<div class="container " style = "display:inline">
+<div class="container" style = "display:inline">
   <div class="w3-top">
     <div class="lecard center w3-center container3 w3-khaki">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
@@ -74,10 +74,10 @@ $connection = mysqli_connect("localhost","root", "1234", "roman");
       <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-padding-large w3-button w3-hover-black w3-hover-text-yellow" title="More">
           <br>
-          <br>MORE <i class="fa fa-caret-down"></i></button>     
+          <br>MORE <i class="fa fa-caret-down"></i></button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Merchandise</a>
-          <a href="#" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Sponsors</a>
+          <a href="store.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Merchandise</a>
+          <a href="Sponsors.html" class="w3-bar-item w3-button w3-hover-black w3-hover-text-yellow">Sponsors</a>
         </div>
       </div>
       <a href="javascript:void(0)" class="w3-padding-large w3-hover-black w3-hide-small w3-right w3-hover-text-yellow">
